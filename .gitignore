@@ -1,0 +1,13 @@
+# Generated meshes -- reproducible from the notebook, so not worth versioning
+*.msh
+week1/meshes/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.venv/
