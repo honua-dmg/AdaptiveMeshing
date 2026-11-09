@@ -1,0 +1,52 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2512                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _87ed40d2-20251219 OPENFOAM=2512 version=2512
+Arch   : "LSB;label=32;scalar=64"
+Exec   : topoSet -case /work/case
+Date   : Nov 09 2026
+Time   : 13:38:01
+Host   : 881f1ca0feb5
+PID    : 1
+I/O    : uncollated
+Case   : /work/case
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Reading topoSetDict
+
+Time = 0
+    mesh not changed.
+Created faceSet airfoilFaces
+    Applying source patchToFace
+    Adding all faces of patches: (sides) ...
+    Found matching patch sides with 529 faces
+    faceSet airfoilFaces now size 529
+Read set faceSet airfoilFaces size:529
+    Applying source boxToFace
+    Adding faces with centre within boxes 1((-0.1 -0.1 -1) (0.9 0.1 1))
+    faceSet airfoilFaces now size 424
+Created faceSet farfieldFaces
+    Applying source patchToFace
+    Adding all faces of patches: (sides) ...
+    Found matching patch sides with 529 faces
+    faceSet farfieldFaces now size 529
+Read set faceSet farfieldFaces size:529
+    Applying source faceToFace
+    Removing all elements of face sets: (airfoilFaces)
+    faceSet farfieldFaces now size 105
+
+End
+

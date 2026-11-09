@@ -1,0 +1,60 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2512                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _87ed40d2-20251219 OPENFOAM=2512 version=2512
+Arch   : "LSB;label=32;scalar=64"
+Exec   : extrudeMesh -case /work/case
+Date   : Nov 09 2026
+Time   : 13:38:00
+Host   : 25735c27034d
+PID    : 1
+I/O    : uncollated
+Case   : /work/case
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Selecting extrudeModel plane
+Selected extrudeModel for linearNormal using coeffs 
+{
+    thickness       0.08059;
+}
+
+Extruding from surface using model plane
+Collapsing edges < 1e-12 of bounding box
+
+Extruding surfaceMesh read from file "/work/case/surf.obj"
+
+Extruding surface with :
+    points     : 34951
+    faces      : 47449
+    normals[0] : (0 0 1)
+
+Mesh bounding box : (-40.07549026 -40.29049106 0) (40.496475 40.29049106 0.08059)
+        with span : (80.57196526 80.58098212 0.08059)
+Merge distance    : 8.059e-14
+
+Collapsing edges < 8.059e-14 ...
+
+            Uncollapsed edges = 0 / 199751
+    Number of points : 69902
+    Not visited      : 0
+    Not collapsed    : 69902
+    Collapsed        : 0
+
+Collapsing 0 cells
+Writing mesh to "/work/case/constant/region0"
+
+End
+

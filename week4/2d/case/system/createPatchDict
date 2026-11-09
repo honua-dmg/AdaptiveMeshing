@@ -1,0 +1,21 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  OpenFOAM v2512 (ESI). Give the extruded mesh the .geo's patch names.
+  The emptied source patches (originalPatch, otherSide, sides) are removed.
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      createPatchDict;
+}
+
+pointSync false;
+
+patches
+(
+    { name front;    patchInfo { type empty; } constructFrom patches; patches (originalPatch); }
+    { name back;     patchInfo { type empty; } constructFrom patches; patches (otherSide); }
+    { name airfoil;  patchInfo { type wall;  } constructFrom set;     set airfoilFaces; }
+    { name farfield; patchInfo { type patch; } constructFrom set;     set farfieldFaces; }
+);

@@ -1,0 +1,13 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  OpenFOAM v2512 (ESI). Placeholder: checkMesh builds an fvMesh, which requires
+  this file to exist. Real entries get added when we solve.
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      fvSolution;
+}
+
+solvers {}

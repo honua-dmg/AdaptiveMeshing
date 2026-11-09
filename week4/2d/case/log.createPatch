@@ -1,0 +1,85 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2512                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _87ed40d2-20251219 OPENFOAM=2512 version=2512
+Arch   : "LSB;label=32;scalar=64"
+Exec   : createPatch -overwrite -case /work/case
+Date   : Nov 09 2026
+Time   : 13:38:01
+Host   : 04d4537e0c2e
+PID    : 1
+I/O    : uncollated
+Case   : /work/case
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Reading "system/createPatchDict"
+
+
+
+Adding patches to mesh region0
+
+Adding new patch front from 
+{
+    type            empty;
+    nFaces          0;
+    startFace       0;
+}
+
+Adding new patch back from 
+{
+    type            empty;
+    nFaces          0;
+    startFace       0;
+}
+
+Adding new patch airfoil from 
+{
+    type            wall;
+    nFaces          0;
+    startFace       0;
+}
+
+Adding new patch farfield from 
+{
+    type            patch;
+    nFaces          0;
+    startFace       0;
+}
+
+
+
+
+Repatching mesh region0
+
+Moving faces from patch originalPatch to patch 3
+Moving faces from patch otherSide to patch 4
+Read 424 faces from faceSet airfoilFaces
+Read 105 faces from faceSet farfieldFaces
+Doing topology modification to order faces.
+
+Not synchronising points.
+
+Removing patches with no faces in them.
+
+Removed zero-sized patch sides type wall at position 0
+Removed zero-sized patch originalPatch type empty at position 1
+Removed zero-sized patch otherSide type empty at position 2
+
+
+Writing repatched mesh region0 to 0
+
+End
+

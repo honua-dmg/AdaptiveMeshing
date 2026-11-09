@@ -1,0 +1,30 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  OpenFOAM v2512 (ESI). One-cell-thick extrusion of the gmsh 2-D mesh (surf.obj),
+  front and back become "empty" patches -> 2-D case.
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      extrudeMeshDict;
+}
+
+constructFrom   surface;
+surface         "/work/case/surf.obj";
+flipNormals     false;
+
+extrudeModel    plane;          // single layer, empty patches on front and back
+nLayers         1;
+expansionRatio  1;
+
+linearNormalCoeffs              // "plane" reads its thickness from here
+{
+    thickness   0.08059;        // = span = 0.1*c in the .geo
+}
+
+mergeFaces      false;
+
+// Default merges points closer than 1e-4 x bounding box (80 m domain -> 8 um), which
+// welds the 1.571 um first boundary-layer cell (10,392 edges collapsed when tested).
+mergeTol        1e-12;

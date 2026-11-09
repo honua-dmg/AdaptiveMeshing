@@ -1,0 +1,17 @@
+Info    : Increasing process stack size (8176 kB < 16 MB)
+Info    : Running '/Users/gurusai/programming/AdaptiveMeshing/.venv/bin/gmsh /Users/gurusai/programming/AdaptiveMeshing/.claude/worktrees/onera-d-2d/week4/2d/_2d.geo -2 -o /Users/gurusai/programming/AdaptiveMeshing/.claude/worktrees/onera-d-2d/week4/2d/onera_d_airfoil_2d.msh -log /Users/gurusai/programming/AdaptiveMeshing/.claude/worktrees/onera-d-2d/week4/2d/gmsh.log' [Gmsh 4.15.2, 1 node, max. 1 thread]
+Info    : Started on Mon Nov  9 19:07:59 2026
+Info    : Reading '/Users/gurusai/programming/AdaptiveMeshing/.claude/worktrees/onera-d-2d/week4/2d/_2d.geo'...
+Info    : Done reading '/Users/gurusai/programming/AdaptiveMeshing/.claude/worktrees/onera-d-2d/week4/2d/_2d.geo'
+Info    : Meshing 1D...
+Info    : [  0%] Meshing curve 1 (BSpline)
+Info    : [ 40%] Meshing curve 2 (BSpline)
+Info    : [ 70%] Meshing curve 3 (Circle)
+Info    : Done meshing 1D (Wall 0.00844779s, CPU 0.008373s)
+Info    : Meshing 2D...
+Info    : Meshing surface 1 (Plane, Frontal-Delaunay)
+Info    : Done meshing 2D (Wall 0.477112s, CPU 0.47298s)
+Info    : 35091 nodes 48121 elements
+Info    : Writing '/Users/gurusai/programming/AdaptiveMeshing/.claude/worktrees/onera-d-2d/week4/2d/onera_d_airfoil_2d.msh'...
+Info    : Done writing '/Users/gurusai/programming/AdaptiveMeshing/.claude/worktrees/onera-d-2d/week4/2d/onera_d_airfoil_2d.msh'
+Info    : Stopped on Mon Nov  9 19:08:00 2026 (From start: Wall 0.554205s, CPU 0.592619s)

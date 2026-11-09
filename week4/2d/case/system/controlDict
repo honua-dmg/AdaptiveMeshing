@@ -1,0 +1,24 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  OpenFOAM v2512 (ESI). Minimal controlDict: enough for mesh utilities
+  (gmshToFoam, checkMesh). Solver settings get added when we solve.
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      controlDict;
+}
+
+application     none;
+
+startFrom       startTime;
+startTime       0;
+stopAt          endTime;
+endTime         1;
+deltaT          1;
+
+writeControl    timeStep;
+writeInterval   1;
+writeFormat     ascii;
+writePrecision  10;
